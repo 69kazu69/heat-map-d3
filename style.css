@@ -1,5 +1,5 @@
 body{
-    height: 100vh;
+    height: 140vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,4 +7,24 @@ flex-direction: column ;
 }
 #canvas{
     background: rgb(142, 200, 255);
+    border: .2rem solid rgb(0, 0, 0);
+    box-shadow: 0 0 2rem;
+}
+#tooltip{
+    visibility: hidden;
+    border: 1px solid;
+    padding: 1rem;
+    margin: 1rem;
+}
+.cell:hover{
+    fill: rgb(255, 255, 255);
+}
+#legend{
+    margin: 1rem;
+}
+.header{
+    border: 2px solid black;
+    padding: 1rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px;
 }

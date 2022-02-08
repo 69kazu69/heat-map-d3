@@ -10,11 +10,33 @@
 </head>
 
 <body>
-    <h2 id="title">Monthly Global Land-Surface Tempreture</h2>
+    <div class = "header">
+        <h2 id="title">Monthly Global Land-Surface Tempreture</h2>
     <h4 id="description">Tempretures from 1753 to 2015. Average is 8.66c 
     </h4>
-    <svg id = "canvas">
+    </div>
 
+    <div id="tooltip"></div>
+    <svg id = "canvas" stroke = "black" stroke-width = "1px">
+
+    </svg>
+    <svg id="legend">
+        <g>
+            <rect x="10" y="0" width="40" height="40" fill="SteelBlue" stroke = "black"></rect>
+            <text x="60" y="20" fill="black">Variance of -1 or less</text>
+        </g>
+        <g>
+            <rect x="10" y="40" width="40" height="40" fill="LightSteelBlue" stroke = "black"></rect>
+            <text x="60" y="60" fill="black">On or Below Average</text>
+        </g>
+        <g>
+            <rect x="10" y="80" width="40" height="40" fill="Orange" stroke = "black"></rect>
+            <text x="60" y="100" fill="black">Above Average</text>
+        </g>
+        <g>
+            <rect x="10" y="120" width="40" height="40" fill="Crimson" stroke = "black"></rect>
+            <text x="60" y="140" fill="black">Variance of +1 or more</text>
+        </g>
     </svg>
 </body>
 
